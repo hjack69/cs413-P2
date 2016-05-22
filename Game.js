@@ -10,6 +10,11 @@ var gameport = document.getElementById("gameport");
 var renderer = PIXI.autoDetectRenderer(WIDTH, HEIGHT, {backgroundColor: 0});
 gameport.appendChild(renderer.view);
 var stage = new PIXI.Container();
+PIXI.loader.add("assets.png").load(setup);
+
+function setup() {
+    
+}
 
 function update() {
 
